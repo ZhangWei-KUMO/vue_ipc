@@ -1,6 +1,6 @@
 {
   "name": "vue_ipc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A IPC Render Plugin for vue + electron ",
   "main": "index.js",
   "scripts": {
