@@ -88,9 +88,9 @@ const API_ADDRESS = "https:www.xxx.com/api";
 
 ## Send Function Arguments
 
-| Name   | type    | Description                                                          |
-| :----- | :------ | :------------------------------------------------------------------- |
-| method | :String | Normal HTTP Request methods                                          |
-| URL    | String  | api url                                                              |
-| body   | Object  | This is an optional argument,if you use GET method,you can ignore it |
+| Name   | type   | Description                                                          |
+| :----- | :----- | :------------------------------------------------------------------- |
+| method | String | Normal HTTP Request methods                                          |
+| URL    | String | api url                                                              |
+| body   | Object | This is an optional argument,if you use GET method,you can ignore it |
 
