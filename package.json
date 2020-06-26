@@ -1,0 +1,44 @@
+{
+  "name": "vue_ipc",
+  "version": "1.0.0",
+  "description": "A IPC Render Plugin for vue + electron ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangWei-KUMO/vue_ipc.git"
+  },
+  "keywords": [
+    "electron",
+    "plugin"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "author": "zhangwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhangWei-KUMO/vue_ipc/issues"
+  },
+  "homepage": "https://github.com/ZhangWei-KUMO/vue_ipc#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "eslint": "^7.3.1"
+  }
+}
