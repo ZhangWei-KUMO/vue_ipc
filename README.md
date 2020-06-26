@@ -1,13 +1,19 @@
 # vue_ipc
-A IPC Render Plugin for vue + electron 
+
+A IPC Render Plugin for vue + electron, you can simply communicate with electron main process, just like ajax。
 
 
 ## Install
-```
+
+```bash
 npm run install vue_ipc
+# or
 yarn add vue_ipc
 ```
+
 ## Usage
+
+Firstly, import your Vue project:
 
 ```js
 // main.js 
@@ -28,8 +34,9 @@ new Vue({
 }).$mount('#app')
 ```
 
+You can use `$ipcRenderer` object to send and listen message:
+
 ```js
-// Home.vue
 export default {
   name: "Home",
   data() {
@@ -56,8 +63,9 @@ export default {
 };
 ```
 
+The edit Electron `main.js/background.js`,like this:
+
 ```js
-// Electron main.js/background.js
 import { ipcMain } from 'electron';
 import axios from 'axios';
 
@@ -78,4 +86,18 @@ const API_ADDRESS = "https:www.xxx.com/api";
     }
   })
 ```
-## 
+
+## Methods
+| :Method | :type | :Description                                                                                                    |
+| :------ | :---- | :-------------------------------------------------------------------------------------------------------------- |
+| :send   | :func | :Send message to electron main process from render process, accept `method`,`URL`,`body` three arguments        |
+| :once   | :func | :listen message from electron main process to render process, accept a  signal argument and a callback function |
+
+## Send Function Arguments
+
+| :Name   | :type   | :Description                                                          |
+| :------ | :------ | :-------------------------------------------------------------------- |
+| :method | :String | :Normal HTTP Request methods                                          |
+| :URL    | :String | :api url                                                              |
+| :body   | :Object | :This is an optional argument,if you use GET method,you can ignore it |
+
